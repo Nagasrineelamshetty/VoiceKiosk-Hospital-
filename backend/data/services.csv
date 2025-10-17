@@ -1,0 +1,6 @@
+name,description,department,price
+ECG,Electrocardiogram test for heart activity,Cardiology,500
+EEG,Brain activity test using electrodes,Neurology,1200
+X-Ray,Digital bone and chest imaging,Orthopedics,300
+Vaccination,Immunization for children,Pediatrics,150
+Skin Allergy Test,Test for common allergies,Dermatology,800

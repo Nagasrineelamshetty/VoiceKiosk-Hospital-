@@ -1,0 +1,6 @@
+name,specialization,department,room_number,floor,directions,experience,phone,email,visiting_hours_ids
+Dr. Kiran Kumar,Cardiology,Cardiology,203,First Floor,"Go straight, right turn, 3rd door left",15,9876543210,dr.kiran@example.com,
+Dr. Ritu Sharma,Neurology,Neurology,305,Second Floor,"Take lift to 2nd floor, left corridor",12,9876501234,dr.ritu@example.com,
+Dr. Arjun Patel,Orthopedics,Orthopedics,110,Ground Floor,"Next to Radiology",10,9123456780,dr.arjun@example.com,
+Dr. Meera Rao,Pediatrics,Pediatrics,408,Third Floor,"Near Child Ward",8,9988776655,dr.meera@example.com,
+Dr. Rajesh Nair,Dermatology,Dermatology,507,Fourth Floor,"Opposite Pharmacy",9,9911223344,dr.rajesh@example.com,

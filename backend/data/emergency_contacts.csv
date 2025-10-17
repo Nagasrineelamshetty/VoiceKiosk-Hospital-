@@ -1,0 +1,6 @@
+name,phone,department,available_24x7
+Security,040-12345678,,True
+Ambulance,108,,True
+Fire Safety,040-98765432,,True
+Cardiac Emergency,040-11122334,Cardiology,True
+Child Emergency,040-55566777,Pediatrics,True
