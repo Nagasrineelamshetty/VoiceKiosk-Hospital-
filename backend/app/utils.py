@@ -141,13 +141,21 @@ async def find_best_match(query: str) -> str:
             dept = doctor.get("department", "unknown")
             return f"{doctor.get('name', 'Unknown')} is in the {dept} department."
 
+    
     # ✅ Departments
     departments = await safe_find(departments_collection, length=50)
     for dept in departments:
         dept_name = dept.get("name", "").lower()
         if dept_name and dept_name in query_lower:
+        # Check if user asked about head of department
+            if "head" in query_lower or "in charge" in query_lower or "who is the doctor" in query_lower:
+                head = dept.get("head_of_department", "Not available")
+                return f"The head of the {dept.get('name', 'Unknown')} department is {head}."
+        # Otherwise return general description
             desc = dept.get("description", "Handles general cases.")
-            return f"The {dept.get('name', 'Unknown')} department is located in the main building. {desc}"
+            location = dept.get("location", "location not specified")
+            return f"The {dept.get('name', 'Unknown')} department is located in the {location}. {desc}"
+
 
     # ✅ Services
     services = await safe_find(services_collection)
